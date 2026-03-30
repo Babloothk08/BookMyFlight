@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Sitemap = () => {
   const sitemapData = [
@@ -30,6 +30,10 @@ const Sitemap = () => {
       ]
     }
   ];
+
+  useEffect(() => {
+      window.scroll(0, 0);
+    });
 
   return (
     <div className="bg-[#f8fafc] min-h-screen pt-24 pb-12">

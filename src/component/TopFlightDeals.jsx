@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const TopFlightDeals = () => {
   const [dealType, setDealType] = useState("domestic")
@@ -46,7 +47,7 @@ const TopFlightDeals = () => {
                   <td className="p-5 font-black text-gray-900">${deal.price}</td>
                   <td className="p-5 text-gray-500 font-medium">{deal.date}</td>
                   <td className="p-5 text-right">
-                    <button className="text-blue-600 font-bold hover:underline group-hover:pr-2 transition-all">Book Now</button>
+                    <Link to="/search"><button className="text-blue-600 font-bold hover:underline group-hover:pr-2 transition-all">Book Now</button></Link>
                   </td>
                 </tr>
               ))}

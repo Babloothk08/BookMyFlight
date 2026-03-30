@@ -16,6 +16,9 @@ import AboutUs from './pages/AboutUs';
 import ChatWidget from './pages/ChatWidget';
 import LoginPage from './pages/user/Login';
 import Signup from './pages/user/Singup';
+import SearchEngine from './component/SearchEngine';
+import Booking from './pages/Booking';
+import Confirmation from './pages/Confirmation';
 
 function App() {
   return (
@@ -36,10 +39,11 @@ function App() {
             <Route path='/packages' element={<Packages/>}/>
             <Route path='/contact-us' element={<ContactUsPage/>}/>
             <Route path='/about-us' element={<AboutUs/>}/>
-
+            <Route path='/search' element={<SearchEngine/>}/>
             <Route path='/login' element={<LoginPage/>}/>
             <Route path='/signup' element={<Signup/>}/>
-
+            <Route path="/booking-api" element={<Booking />} />
+            <Route path="/confirmation" element={<Confirmation />} />
           </Routes>
         </main>
         <Footer />
